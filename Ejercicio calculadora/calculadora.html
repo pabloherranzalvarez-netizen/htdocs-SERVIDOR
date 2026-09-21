@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+<form action="calculo.php" method="POST">
+
+    <label for="num1">Numero 1:</label>
+    <input type="number" name="num1" id="num1" required><br><br>
+
+    <label for="num2">Numero 2:</label>
+    <input type="number" name="num2" id="num2" required><br><br>
+
+    <label for="operacion">Operacion:</label>
+    <select name="operacion" id="operacion">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+    </select><br><br>
+
+    <input type="submit" value="Calcular">
+</form>
+</body>
+</html>
