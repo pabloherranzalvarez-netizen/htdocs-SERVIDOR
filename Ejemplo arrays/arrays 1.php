@@ -47,7 +47,8 @@ foreach ($animal as $ubicacion => $animales) {
 
 //ahora tengo que hacer un array, metiendo a la familia de los Simpsons. En familia, esta los simpsons, en Padre esta Homer, 
 // en Madre esta Marge y en Hijos esta otro array con Bart, Lisa y Maggie. Luego hacer un var_dump para mostrar el array.
-//Tambien otro array ahí que sea de la familia de los Griffin, en familia esta los Griffin, en Padre esta Peter, en Madre esta Lois y en Hijos esta otro array con Chris, Meg y Stewie. Luego hacer un var_dump para mostrar el array.
+//Tambien otro array ahí que sea de la familia de los Griffin, en familia esta los Griffin, en Padre esta Peter, en Madre esta Lois y
+// en Hijos esta otro array con Chris, Meg y Stewie. Luego hacer un var_dump para mostrar el array.
 $gente = array(
     "Simpsons" => array(
         "Familia" => "Simpsons",
