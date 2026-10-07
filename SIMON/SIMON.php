@@ -8,6 +8,14 @@
   }
 </style>
 
+<h1>Simón Dice</h1>
+
+<!-- Formulario para elegir dificultad -->
+<form method="POST">
+  <button type="submit" name="modo" value="facil">Jugar Fácil</button>
+  <button type="submit" name="modo" value="dificil">Jugar Difícil</button>
+</form>
+
 <?php
 // Acepta el array $colores que le envíen
 function pintarCirculos($colores) {
@@ -29,7 +37,12 @@ function jugarDificil() {
     pintarCirculos($colores);
 }
 
-// --- PRUEBA ---
-jugarFacil(); // Imprimirá 4 círculos
-jugarDificil(); // Imprimirá 8 círculos
+// --- EJECUCIÓN SEGÚN EL BOTÓN PULSADO ---
+if (isset($_POST['modo'])) {
+    if ($_POST['modo'] == 'facil') {
+        jugarFacil();
+    } else {
+        jugarDificil();
+    }
+}
 ?>
